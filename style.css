@@ -4,3 +4,34 @@ body {
 	font-family: Arial, sans-serif;
 	color: #333;
 }
+
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #f2f2f2;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+
