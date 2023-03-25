@@ -60,6 +60,30 @@ h2 {
 	margin-bottom: 20px;
 }
 
+/* Project images grid */
+#projects ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 30px;
+}
+
+#projects li {
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+
+#projects img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+#projects h3 {
+	font-size: 22px;
+	margin: 0;
+}
+
 img {
 	max-width: 100%;
 }
