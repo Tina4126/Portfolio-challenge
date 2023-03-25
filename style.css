@@ -1,10 +1,11 @@
+
+/* General styles */
 body {
 	margin: 0;
 	padding: 0;
 	font-family: Arial, sans-serif;
 	color: #333;
 }
-
 
 a {
 	text-decoration: none;
@@ -17,6 +18,7 @@ ul {
 	padding: 0;
 }
 
+/* Header styles */
 header {
 	background-color: #f2f2f2;
 	padding: 20px;
@@ -34,19 +36,20 @@ nav li {
 	margin: 0 10px;
 }
 
-
 nav a {
 	font-size: 18px;
 }
 
+/* Avatar image styles */
 header img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 20px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 20px;
 }
 
+/* Main styles */
 main {
 	padding: 50px;
 }
@@ -56,11 +59,11 @@ section {
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 28px;
 	margin-bottom: 20px;
 }
 
-/* Project images grid */
+/* Project grid styles */
 #projects ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -68,34 +71,71 @@ h2 {
 }
 
 #projects li {
-	border: 1px solid #ccc;
-	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+	overflow: hidden;
 }
 
 #projects img {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
-	margin-bottom: 10px;
 }
 
 #projects h3 {
-	font-size: 22px;
-	margin: 0;
+	font-size: 24px;
+	margin: 10px;
 }
 
-img {
-	max-width: 100%;
-}
+/* Media queries */
+@media only screen and (max-width: 768px) {
+	/* Header styles */
+	header {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 
-form label {
-	display: block;
-	margin-bottom: 10px;
+	header img {
+		margin-bottom: 20px;
+	}
+
+	nav {
+		margin-top: 20px;
+	}
+
+	/* Main styles */
+	main {
+		padding: 20px;
+	}
+
+	section {
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+
+	/* Project grid styles */
+	#projects ul {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 20px;
+	}
+
+	#projects li {
+		height: 250px;
+	}
+
+	#projects img {
+		height: 100%;
+		object-fit: cover;
+	}
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-	width: 100%;
-	padding:10px;
+    width: 100%;
+    padding:10px;
 }
